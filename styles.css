@@ -45,6 +45,7 @@ p{margin:0}
 .nav__links{display:flex;flex-wrap:wrap;align-items:center;gap:28px;font-size:14px;font-weight:500}
 .nav__links a{color:var(--ink);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
 .nav__links a[aria-current="page"]{color:var(--terracotta)}
+.nav__links a.btn,.nav__links a.btn[aria-current="page"]{color:var(--white)}
 
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 22px;border-radius:6px;font-weight:500;font-size:15px;text-decoration:none;border:1px solid transparent}
