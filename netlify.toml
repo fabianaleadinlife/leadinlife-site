@@ -1,0 +1,60 @@
+[build]
+  publish = "."
+
+# Redirects from the old WordPress site so existing links do not break.
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/service/*"
+  to = "/coaching/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio-item/the-life-redesign-project/"
+  to = "/coaching/#career"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio-item/bespoke-learning/"
+  to = "/design/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio-item/*"
+  to = "/learning/"
+  status = 301
+
+[[redirects]]
+  from = "/projects/"
+  to = "/design/"
+  status = 301
+
+[[redirects]]
+  from = "/company/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/contact-2/"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/blog-2/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/2019/*"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
